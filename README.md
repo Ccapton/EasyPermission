@@ -54,3 +54,19 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
    EasyPermission.onRequestPermissionsResult(requestCode,permissions,grantResults);
 }
 ```
+### gradle引入
+**在project的build.gradle中**
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+**在app的build.gradle中**
+```
+dependencies {
+	        compile 'com.github.Ccapton:EasyPermission:1.0'
+	}
+```
